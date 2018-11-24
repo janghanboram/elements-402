@@ -1,6 +1,6 @@
 import React from "react";
 import {Route} from 'react-router-dom'
-
+import './App.scss';
 import { Home, About } from "pages";
 import Menu from "./components/Menu"
 
