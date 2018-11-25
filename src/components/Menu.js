@@ -17,11 +17,6 @@ const Menu = () => {
             홈
           </NavLink>
         </li>
-        <li>
-          <NavLink exact to="/about" activeStyle={activeStyle}>
-            소개
-          </NavLink>
-        </li>
       </ul>
     </div>
   );

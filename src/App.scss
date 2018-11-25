@@ -1,3 +1,20 @@
-body{
-    background: red;
+@import './styles/utils';
+
+body {
+    background: $oc-gray-0;
+}
+
+ul, ol, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, p, a, span{
+    color: $oc-gray-7;
+    margin:0;
 }
