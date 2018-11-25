@@ -14,6 +14,11 @@
         align-items: center;
         justify-content: space-between;
         padding-bottom: 0.5rem;
+
+        .btn-back{
+            text-decoration: underline;
+            line-height: 1;
+        }
     }
 
     .todo-list {

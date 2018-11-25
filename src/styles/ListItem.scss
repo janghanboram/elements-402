@@ -10,17 +10,46 @@
 
      .cell-link {
          display: block;
-         width: 100%;
+         width: calc(100% - 4rem);
          height: 100%;
+         margin: auto;
 
          display: flex;
          align-items: center;
          justify-content: center;
          flex-direction: column;
+
+         .top {
+             width: 100%;
+             display: flex;
+             align-items: flex-start;
+             justify-content: space-between;
+             flex-direction: row;
+
+             .item-title{
+                 max-width: 200px;
+                 font-size: 2rem;
+             }
+             .item-id{
+                 font-size: 7rem;
+                 line-height: 1;
+             }
+
+         }
+
+         .bottom {
+             width: 100%;
+             padding-top: 2rem;
+             .item-date{
+                 color: $oc-gray-3;
+             }
+         }
+
      }
 
      &:hover {
          border-color: $oc-gray-4;
+         background: $oc-gray-3;
      }
  }
 
