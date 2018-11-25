@@ -1,10 +1,16 @@
 @import './utils.scss';
 
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 1rem;
+}
 .auto-slider {
     position: relative;
     min-width: 100%;
     min-height: 700px;
     background: $oc-red-2;
+    overflow: hidden;
 
     .hero-title {
         position: absolute;
