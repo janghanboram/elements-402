@@ -1,0 +1,32 @@
+@import './utils.scss';
+
+.element-header {
+    margin: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: solid 1px $oc-gray-1;
+    box-shadow: 10px 10px 5px $oc-gray-2;
+
+    .content-header {
+        border-bottom: solid 2px $oc-gray-2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 0.5rem;
+    }
+
+    .todo-list {
+        h3 {
+            padding-top: 0.5rem;
+        }
+
+        .todo-item {
+            padding: 0.5rem 0 0 0.5rem;
+
+            .checkbox {
+                padding: 0.5rem;
+            }
+        }
+    }
+}
