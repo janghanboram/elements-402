@@ -1,0 +1,104 @@
+@import './utils.scss';
+
+.auto-slider {
+    position: relative;
+    min-width: 100%;
+    min-height: 700px;
+    background: $oc-red-2;
+
+    .hero-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+
+        padding: 3rem 2.5rem;
+
+        h1 {
+            color: $oc-red-7;
+            font-size: 3rem;
+        }
+    }
+
+    transform: translate3d(0, 0, 0);
+
+    &:hover .slider {
+
+        animation-play-state: paused;
+
+    }
+
+
+    .slider {
+        position: absolute;
+        top: 10rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+
+        animation: slide infinite 3s alternate;
+
+        @keyframes slide {
+            0% {
+                margin-left: 0px;
+            }
+
+            50% {
+                margin-left: -150px;
+            }
+
+            100% {
+                margin-left: -300px;
+            }
+        }
+
+        .slider-item {
+            display: flex;
+            justify-content: center;
+            min-width: 200px;
+            overflow: hidden;
+
+            &.top {
+                align-items: start
+            }
+
+            &.bottom {
+                align-items: flex-end;
+            }
+
+            &.small {
+                width: 200px;
+            }
+
+            &.medium {
+                width: 225px;
+            }
+
+            &.large {
+                width: 250px;
+            }
+
+            &:hover{
+                opacity: 0;
+                //   animation: crescendo 1.5s alternate infinite ease-in;
+            }
+
+            // @keyframes crescendo {
+            //     0% {
+            //         transform: scale(.8);
+            //     }
+
+            //     100% {
+            //         transform: scale(1.5);
+            //     }
+            // }
+
+        }
+    }
+}
